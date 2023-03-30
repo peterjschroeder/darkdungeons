@@ -1,0 +1,292 @@
+\documentclass[10pt, a4paper]{book}
+\usepackage[includeheadfoot,headheight=32.50758pt,headsep=.0599675in,foot=.40in,footskip=.45in,margin=0.5in]{geometry}
+\usepackage[table]{xcolor}
+% Uncomment for testing
+%\usepackage[grid,gridunit=pt,gridcolor=red,subgridcolor=green]{eso-pic}
+%\usepackage{showframe}
+%\usepackage{array,etoolbox,float,graphicx,grffile,picture,pifont,sectsty}
+\usepackage{enumitem,fancyhdr,floatrow,microtype,multicol,pdfpages,titlesec,tocloft,wrapfig,xltabular}
+\usepackage[font=bf,justification=centering]{caption}
+\usepackage[nonewpage]{imakeidx}
+\usepackage{librebaskerville}
+\usepackage[cmintegrals,cmbraces]{newtxmath}
+\usepackage[super]{nth}
+\usepackage{ebgaramond-maths}
+\usepackage[T1]{fontenc}
+\usepackage[export]{adjustbox}
+\usepackage[most]{tcolorbox}
+\usepackage[absolute]{textpos}
+\usepackage{parskip}
+% These have to be last
+\usepackage[bookmarksdepth=paragraph,hidelinks]{hyperref}
+\usepackage{bookmark}
+
+\graphicspath{{./Images/}}
+
+% Acrobat transparency fix
+\pdfvariable pageattr{/Group <</S /Transparency /I true /CS /DeviceRGB>>}
+
+% Temp until I can figure out why there are so many underfulls
+\hbadness=10000
+\vbadness=10000
+\hfuzz=\maxdimen
+\newcount\hbadness
+\newcount\vbadness
+\newdimen\hfuzz
+
+% Ignore EB Garamond warnings
+\DeclareFontShape{T1}{EBGaramond(0)}{m}{n}{ <-> ssub * EBGaramond(0)/T1/cmr/m/n }{}
+
+%% Page
+% Column spacing
+\setlength\columnsep{0.25in}
+% Remove section numbers
+\setcounter{secnumdepth}{0}
+% Figure spacing
+\setlength{\floatsep}{0pt} % Space left between floats (12.0pt plus 2.0pt minus 2.0pt).
+\setlength{\textfloatsep}{0pt} % Space between last top float or first bottom float and the text (20.0pt plus 2.0pt minus 4.0pt).
+\setlength{\intextsep}{\parskip} % Space left on top and bottom of an in-text float (12.0pt plus 2.0pt minus 2.0pt).
+\setlength{\dbltextfloatsep}{0pt} % Is \textfloatsep for 2 column output (20.0pt plus 2.0pt minus 4.0pt).
+\setlength{\dblfloatsep}{0pt} % Is \floatsep for 2 column output (12.0pt plus 2.0pt minus 2.0pt).
+\setlength{\abovecaptionskip}{0pt} % Space above caption (10.0pt).
+\setlength{\belowcaptionskip}{0pt} % Space below caption (0.0pt).
+
+% Font
+\setmainfont{ebgaramond}
+
+%% Bookmarks
+\makeatletter
+\newcommand*{\AddChapterPrefixInBookmarks}{%
+	\if@mainmatter
+		\ifnum\bookmarkget{level}=0
+			\ifnum\thechapter>0
+				\preto\bookmark@text{\@chapapp\space\thechapter:\space}%
+			\fi
+		\fi
+	\fi
+}
+\makeatother
+
+\bookmarksetup{addtohook=\AddChapterPrefixInBookmarks}
+
+%% Colors
+\definecolor{blue}{HTML}{20395b}
+\definecolor{green}{HTML}{06330c}
+\definecolor{purple}{HTML}{330033}
+\definecolor{red}{HTML}{660000}
+\definecolor{darkbrown}{HTML}{5c4320}
+\definecolor{darkerbrown}{HTML}{331900}
+\definecolor{lightbrown}{HTML}{ecebde}
+\definecolor{mediumbrown}{HTML}{d3d1b3}
+
+%% Chapter
+\titleformat{\chapter}{\filcenter\librebaskerville\fontsize{22}{26}\bfseries\color{\pgcolor}}{\chaptertitlename~\thechapter:} {0.5em} {}
+\titlespacing*{\chapter}{0pt}{-54pt}{0pt}
+
+\newcommand\chapterimage[1][]{
+%	\vspace{\dimexpr-\headheight-\headsep}
+%  	\begingroup
+%  	\setlength{\fboxsep}{0pt}
+%  	\noindent\framebox[7.27in]{\rule{0pt}{0.59in}}%
+%  	\endgroup
+	\ifstrempty{#1}
+		{\AddToShipoutPictureBG*{\put(.5in,270.4mm){\includegraphics[width=7.2672in]{Border/Top-center (\pgcolor)}}}\vspace{\headsep}}
+		{\AddToShipoutPictureBG*{\put(.5in,131.7mm){\includegraphics[width=7.2672in,height=6.05in]{Chapters/#1}}}\vspace{5.58in}}
+}
+
+%% Sections
+\titleformat{\section}{\librebaskerville\fontsize{14}{16}\bfseries\color{\pgcolor}}{}{0pt}{}[\normalfont]
+\titleformat{\subsection}{\librebaskerville\fontsize{12}{14}\bfseries\color{darkbrown}}{}{0pt}{}[\normalfont]
+\titleformat{\subsubsection}{\librebaskerville\fontsize{10}{12}\bfseries}{}{0pt}{}[\normalfont]
+
+\titlespacing*{\section}{0pt}{.14in}{.08in}
+\titlespacing*{\paragraph} {0pt}{3.25ex plus 1ex minus .2ex}{0em}
+
+%% Header
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\chaptermark}[1]{\markboth{\chaptername~\thechapter: #1}{}}
+\renewcommand{\headrulewidth}{0pt} % Remove ruler
+% FIXME: I can't figure out how to remove the vertical space below a tbox, which causes the header to be larger than it needs to be. headheight (.40in) and headsep (.12in) has been reduced to compensate.
+\fancyhead[LO,RE]{\AddToShipoutPictureBG*{\put(12.7mm,275.2mm){\includegraphics[width=7.18696in,height=0.31696in,cframe=darkerbrown 3pt]{Border/Top (\pgcolor).png}}}\begin{tcolorbox}[colback=lightbrown,colframe=darkerbrown,hbox,sharp corners,boxrule=3pt,height=.40in,valign=center,before={\hspace{0.38in}},after={\hspace{0.39in}}]\librebaskerville\large\bfseries\color{\pgcolor}\leftmark\end{tcolorbox}}
+
+%% Items
+\setlist[itemize]{label=\color{\pgcolor}\bullet,parsep=0pt}
+
+%% Footer
+\pagenumbering{arabic}
+%\renewcommand{\footrulewidth}{.02in}
+\newcommand\footer{\fancyfoot{\includegraphics[scale=0.92]{Border/Bottom-left (\pgcolor).png}\hfill\raisebox{.132in}{\large\bfseries\color{\pgcolor}\thepage}\hfill\includegraphics[scale=0.92]{Border/Bottom-right.png}}}
+\footer
+\fancypagestyle{plain}{\fancyhf{}\footer\renewcommand{\headrulewidth}{0pt}} % Use fancyfoot in the plain pagestyle
+
+%% Table of Contents
+% Spacing
+\setlength{\cftbeforetoctitleskip}{0pt}
+\setlength{\cftaftertoctitleskip}{.34in}
+\renewcommand\cftchapafterpnum{\vskip.10in}
+% Remove Header and Footer
+\tocloftpagestyle{empty}
+% Set number of Columns
+\renewcommand\cfttocprehook{\begin{multicols}{3}}\renewcommand\cfttocposthook{\end{multicols}}
+% Fonts
+\renewcommand{\cfttoctitlefont}{\librebaskerville\huge\bfseries\color{blue}}
+\renewcommand{\cftchapfont}{\ebgaramond\bfseries\normalsize}
+\renewcommand{\cftsecfont}{\ebgaramond\footnotesize}
+\renewcommand{\cftsubsecfont}{\ebgaramond\footnotesize}
+% Set Title
+\renewcommand{\contentsname}{\hspace*{\fill}Table of Contents\hspace*{\fill}}
+% Show chapter and first section only
+\setcounter{tocdepth}{1}
+% Remove dots
+\renewcommand{\cftdot}{}
+% Reformat numberline
+\renewcommand{\numberline}[1]{Chapter~#1:~}
+% Disable hyphenation
+\makeatletter\renewcommand{\@tocrmarg}{\@pnumwidth plus1fil}\makeatother
+
+% Index
+% Set table name to start with Table
+\renewcommand{\listoftables}\begingroup\renewcommand{\numberline}[1]{Table~#1:~}\listoftables\endgroup
+% Remove indent
+\setlength{\cfttabindent}{0in}
+
+%% Custom
+% Colorschemes
+\newcommand\pgcolor{blue}
+\makeatletter
+\renewcommand*{\chapter}[1][blue]{
+	\if@openright\cleardoublepage\else\clearpage\fi
+	\thispagestyle{plain}%
+	\renewcommand\pgcolor{#1}
+        \global\@topnum\z@
+	\@afterindentfalse
+        \secdef\@chapter\@schapter}
+\makeatother
+
+% References
+\renewcommand{\chapterautorefname}{Chapter}
+\let\sectionautorefname\chapterautorefname
+\let\subsectionautorefname\chapterautorefname
+\let\subsubsectionautorefname\chapterautorefname
+\let\paragraphautorefname\chapterautorefname
+\newcommand*{\iref}[2][Use brackets not braces for iref.]{\hyperref[#1]{\itshape#2}}
+\newcommand*{\ilink}[2]{\hyperlink{#1}{\itshape#2}}
+\newcommand*{\fullref}[1]{\textit{\hyperref[{#1}]{\autoref*{#1}: \nameref*{#1}}}}
+
+% Example/Statblock
+\tcbset{colback=lightbrown}
+%\newcommand\example[2][Example]{\begingroup\vspace{\the\parskip}\parskip=0pt\begin{tcolorbox}[colback=lightbrown,colframe=darkerbrown,boxsep=.10mm,boxrule=1pt, fonttitle=\ebgaramond\bfseries, title=\centerline{#1}]#2\end{tcolorbox}\endgroup}
+\newcommand\example[2][Example]{\begin{tcolorbox}[colback=lightbrown,colframe=darkerbrown,boxsep=.10mm,boxrule=1pt, fonttitle=\ebgaramond\bfseries, title=\centerline{#1}]#2\end{tcolorbox}}
+%\newcommand\statblock[1]{\begin{samepage}\begingroup\vspace{\the\parskip}\parskip=0pt#1\endgroup\end{samepage}}
+\newcommand\statblock[1]{\begin{minipage}{\columnwidth}#1\end{minipage}}
+
+% Tables
+\DeclareFloatVCode{beforefloat}{\vspace{.10in}}
+%\DeclareFloatVCode{afterfloat}{\vspace{.10in}}
+\floatsetup[table]{capposition=top,captionskip=0pt,font=footnotesize,precode=beforefloat}%,postcode=afterfloat}
+% Vertically center text
+%\renewcommand\tabularxcolumn[1]{m{#1}}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+% FIXME: Find a way to apply this to the whole row
+\newcommand{\thead}[1]{\global\rownum=1\relax\cellcolor{\pgcolor}\leavevmode\color{white}\textbf{#1}}
+% FIXME: Starting row argument is ignored for some reason, so these are swapped.
+\rowcolors{2}{lightbrown}{mediumbrown}
+% Allow reseting of rowcolors
+\makeatletter
+\@ifundefined{c@rownum}{%
+  \let\c@rownum\rownum
+}{}
+\@ifundefined{therownum}{%
+  \def\therownum{\@arabic\rownum}%
+}{}
+\makeatother
+\def\resetrowcol{\global\rownum=1\relax}
+
+% Other
+\newcommand\monsterimage[3][0]{
+	\begin{tikzpicture}
+		\draw (0, #1) node[inner sep=0cm, outer sep=0cm] {\includegraphics[width=0.5\columnwidth,right]{#2}};
+		\draw (0, 0) node[inner sep=0cm, outer sep=0cm] {#3};
+	\end{tikzpicture}
+}
+
+\title{Dark Dungeons}
+\author{Peter J. Schroeder}
+
+\indexsetup{level=\section,toclevel=section}
+\makeindex[name=classes,columns=4,options=-s ./style,title={Classes}]
+\makeindex[name=equipment,columns=4,options=-s ./style,title={Equipment}]
+\makeindex[name=spells,columns=3,options=-s ./style,title={Spells}]
+\makeindex[name=monsters,columns=3,options=-s ./style,title={Monsters}]
+\makeindex[name=magicitems,columns=3,options=-s ./style,title={Magic Items}]
+\makeindex[name=general,columns=3,options=-s ./style,title={General}]
+
+\begin{document}
+\raggedcolumns
+\frontmatter
+\pagestyle{empty}
+\includepdf[width=\pagewidth,height=\pageheight]{Images/Cover/Front.png}
+\newgeometry{margin=.5in}
+\input{"00 - Title Page.tex"}
+\input{"00 - Introduction1.tex"}
+\newpage
+\pdfbookmark[chapter]{\contentsname}{toc}
+\tableofcontents
+\restoregeometry
+
+\mainmatter
+\pagestyle{fancy}
+\input{"00 - Introduction2.tex"}
+\input{"01 - Character Creation.tex"}
+\input{"02 - Ability Scores.tex"}
+\input{"03 - Classes.tex"}
+\input{"04 - Alignment.tex"}
+\input{"05 - Skills.tex"}
+\input{"06 - Weapon Feats.tex"}
+\input{"07 - Equipment.tex"}
+\input{"08 - Spells and Spellcasting.tex"}
+\input{"09 - Experience.tex"}
+\input{"10 - Movement.tex"}
+\input{"11 - Encounters.tex"}
+\input{"12 - Combat.tex"}
+\input{"13 - Strongholds and Dominions.tex"}
+\input{"14 - Other Worlds.tex"}
+\input{"15 - Immortals.tex"}
+\input{"16 - Time Travel.tex"}
+\input{"17 - Monsters.tex"}
+\input{"18 - Treasure.tex"}
+\input{"19 - Game Master Advice.tex"}
+
+\backmatter
+% Index
+\chapter[purple]{Indices}
+\label{chap:Indices}
+\chapterimage
+\thispagestyle{plain}
+
+\footnotesize
+\printindex[classes]
+\printindex[equipment]
+\printindex[spells]
+\clearpage
+\printindex[monsters]
+\clearpage
+\printindex[magicitems]
+\clearpage
+\printindex[general]
+\clearpage
+\makeatletter\renewcommand\listoftables{\@starttoc{lot}}\makeatother
+\section{Tables}
+\begin{multicols*}{2}
+\listoftables
+\end{multicols*}
+\normalsize
+
+% OGL
+\input{"20 - Open Game License.tex"}
+
+\includepdf[width=\pagewidth,height=\pageheight]{Images/Cover/Back.png}
+\end{document}
+

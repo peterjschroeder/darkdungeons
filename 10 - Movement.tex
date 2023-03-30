@@ -1,0 +1,487 @@
+\chapter[green]{Movement}
+\label{chap:Movement}
+\chapterimage[Movement (Bordered)]
+\thispagestyle{plain}
+
+\begin{multicols*}{2}
+	When characters are not in combat, time is simply measured in straightforward hours and minutes. Characters normally move at three times their normal movement speed (see \fullref{chap:Classes}) per ten minutes.
+
+\example{Elfstar is encumbered by her armor and weapons and has a movement speed of 30 feet per round. She will move at 90 feet per ten minutes. Aloysius is unencumbered and has a movement speed of 40 feet per round. He will move at 120 feet per ten minutes.}
+
+When moving over familiar routes, characters can move at full combat rates.
+
+Generally, it is not necessary to switch from general timekeeping to round-by-round timekeeping for simple actions such as someone casting a spell or picking a lock. However, when an encounter happens and it looks like a fight is about to break out then you should start counting off time round by round.
+
+\section{Vision}\index[general]{Vision}
+In order to move, creatures need to see. Adventurers and denizens commonly find themselves in areas that are not adequately lit. This situation can be overcome by carrying sources of light, magical means, or inherited abilities.
+
+\subsection{Infravision}\index[general]{Infravision}\label{sec:Infravision}
+Some creatures have the ability to see not only the color of things but also their temperature. When a creature with this ability is in the dark (and only then—normal light overloads infravision and prevents it from working) they can use their infravision to navigate and even to fight. However, infravision doesn’t allow the creature to see pictures and writing unless they are carved into the surface that the creature is looking at.
+
+\subsection{Light vs. Darkness}\index[general]{Light vs. Darkness}\label{sec:Light vs. Darkness}
+Sometimes adventurers or denizens may also have magical light sources or even sources of magical darkness. These all interact in the following hierarchy:
+
+\textbf{Normal Darkness:} This is the default state in the absence of any natural or magical light. Humans can’t see in this darkness, although creatures with \iref[sec:Infravision]{Infravision} can use it to see.
+
+\textbf{Normal Light:} Light from non-magical sources (e.g. torches, lanterns or natural daylight) trumps normal darkness and overrides it. Creatures with \iref[sec:Infravision]{Infravision} cannot use it in normal light that is stronger than moonlight, but can see normally. A normal light is blocked by opaque objects and casts shadows behind such objects.
+
+\textbf{Light Spells:} The \iref[spell:Light]{Light} spell creates a central light source (that hovers in the air or that moves with an object). That light source radiates magical light that is blocked by opaque objects. Creatures with \iref[sec:Infravision]{Infravision} cannot use it in the magical light, but can see normally.
+
+Magical light from a \iref[spell:Light]{Light} spell trumps both normal light and normal darkness except where blocked.
+
+Any location within the area of one or more \iref[spell:Light]{Light} spells and also one or more \ilink{spell:Darkness}{Darkness} spells is either lit or darkened depending on which spell it is closest to the center point of (excluding spells whose center points are obscured from the location by opaque cover).
+
+In the simplest case—of an overlapping \iref[spell:Light]{Light} spell and \ilink{spell:Darkness}{Darkness} spell with nothing to obscure either of them—this will result in a straight line between the two with everything on one side light and everything on the other side dark.
+
+\textbf{Darkness Spells:} The reversed form of the \iref[spell:Light]{Light} spell creates a central source of darkness that hovers in the air or that moves with an object). That source radiates magical darkness that is blocked by opaque objects. Creatures with \iref[sec:Infravision]{Infravision} can use it in the magical darkness, but normal vision is useless.
+
+Magical darkness from a \ilink{spell:Darkness}{Darkness} spell trumps both normal light and normal darkness except where blocked.
+
+Any location within the area of one or more \iref[spell:Light]{Light} spells and also one or more \ilink{spell:Darkness}{Darkness} spells is either lit or darkened depending on which spell it is closest to the center point of (excluding spells whose center points are obscured from the location by opaque cover).
+
+In the simplest case—of an overlapping \iref[spell:Light]{Light} spell and \ilink{spell:Darkness}{Darkness} spell with nothing to obscure either of them—this will result in a straight line between the two with everything on one side light and everything on the other side dark.
+
+\textbf{Continual Light:} The \iref[spell:Continual Light]{Continual Light} spell creates an area of ambient light centered on a point (that hovers in the air or that moves with an object). The area of effect is completely lit, regardless of opaque objects, leaving no shadows (although any amount of lead or 6 inches of stone will block the effect). Creatures with \iref[sec:Infravision]{Infravision} cannot use it in the magical light, but can see normally.
+
+Magical light from a \iref[spell:Continual Light]{Continual Light} spell trumps both normal light and normal darkness and also magical light and magical darkness from a \iref[spell:Light]{Light} or \ilink{spell:Darkness}{Darkness} spell.
+
+Any location within the area of one or more \iref[spell:Continual Light]{Continual Light} spells and also one or more \ilink{spell:Continual Darkness}{Continual Darkness} spells is either lit or darkened depending on which spell it is closest to the center point of (regardless of the presence of opaque cover).
+
+In the simplest case—of an overlapping \iref[spell:Continual Light]{Continual Light} spell and \ilink{spell:Continual Darkness}{Continual Darkness} spell—this will result in a straight line between the two with everything on one side light and everything on the other side dark.
+
+\textbf{Continual Darkness:} The reversed form of the \iref[spell:Continual Light]{Continual Light} spell creates an area of ambient darkness centered on a point (that hovers in the air or that moves with an object). The area of effect is completely dark, regardless of opaque objects (although any amount of lead or 6 inches of stone will block the effect). Creatures with \iref[sec:Infravision]{Infravision} cannot use it in the magical darkness, and normal vision is also useless.
+
+Magical darkness from a \ilink{spell:Continual Darkness}{Continual Darkness} spell trumps both normal light and normal darkness and also magical light and magical darkness from a \iref[spell:Light]{Light} or \ilink{spell:Darkness}{Darkness} spell.
+
+Any location within the area of one or more \iref[spell:Continual Light]{Continual Light} spells and also one or more \ilink{spell:Continual Darkness}{Continual Darkness} spells is either lit or darkened depending on which spell it is closest to the center point of (regardless of the presence of opaque cover).
+
+In the simplest case—of an overlapping \iref[spell:Continual Light]{Continual Light} spell and \ilink{spell:Continual Darkness}{Continual Darkness} spell—this will result in a straight line between the two with everything on one side light and everything on the other side dark.
+
+\section{Listening}\index[general]{Listening}
+Before walking down a dark corridor or through a closed door, it may be a good idea to listen for danger on the other end.
+
+Characters making a listening attempt must stand away from the rest of the party and even then the party must be being quiet. It is not possible to listen while there is conversation or combat going on.
+
+To see if a character hears a noise, the Game Master rolls 1d6. If the character is a human, they hear a noise if a 1 was rolled. If the character is demi-human, they hear a noise if a 1-2 was rolled.
+
+The Game Master should not distinguish between rolls that failed and rolls that succeeded but in situations where there was no noise to hear.
+
+\section{Doors}\index[general]{Doors}\label{sec:Doors}
+Adventurers commonly encounter doors of one type or another.
+
+Most doors are made of wood. In well maintained and occupied structures, they are likely to be in a good state of repair and may or may not be locked, but in old or abandoned structures, they may be swollen or otherwise stuck. In some cases they may have even been magically locked.
+
+The difficulty of opening a door depends on its state. Obviously there may be individual situations that are different—such as metal or stone doors—but usually they fall into one of the following categories.
+
+\textbf{Normal Door:} Characters can simply push or pull this door open and walk through.
+
+The chances of the characters surprising or being surprised (see \fullref{sec:Surprise}) by whatever is at the other side of the door are normal.
+
+\textbf{Stuck Door:} A door that has become stuck must be shoulder-barged open. One character may attempt this per round, and must roll a \iref[sec:Strength]{Strength} check in order to do so. If the first attempt is not successful, then whatever is at the other side of the door will be alerted by the noise and has no chance of being surprised (see \fullref{sec:Surprise}).
+
+\textbf{Locked Door:} A locked door may be barged open in the same way that a stuck door can be, although the \iref[sec:Strength]{Strength} check is made with a -4 penalty to effective \iref[sec:Strength]{Strength}. Alternatively, a rogue can attempt to pick the lock. Each rogue is only allowed one attempt to pick each lock, and if this fails they must either give up or try again when they have improved their \iref[sec:Open Locks]{Open Locks} ability. However, a failed attempt to pick a lock will not alert creatures on the other side of the door.
+
+\textbf{Barred Door:} A door that is heavily barred may be barged open in the same way as a stuck door, although the \iref[sec:Strength]{Strength} check is made with a -8 penalty to effective \iref[sec:Strength]{Strength}. A rogue cannot use their \iref[sec:Open Locks]{Open Locks} ability to open a barred door unless there is a mechanism for lifting the bar from the front of the door.
+
+\textbf{Magically Locked Door:} A magically locked door cannot be physically forced open. The magic must be bypassed or dispelled in some way (the exact details will vary depending on the specific magic used).
+
+\textbf{Secret Door:} A secret door is a door that is camouflaged so that it does not appear to be a door. Typical secret doors include walls that shift out of the way when a lever is pulled, fireplaces or bookshelves that rotate, or simply wooden doors that match the wooden paneled walls of a room.
+
+Unless the secret door consists of a shifting stone wall (in which case a dwarf or gnome has a chance to notice it when simply walking past), a secret door will not be seen by characters unless they either specifically search for it or they accidentally trigger its opening method.
+
+Searching for a secret door takes 10 minutes per 10-foot section of wall searched, and each character searching must roll 1d6. Any character who rolls a 6 (or any elf who rolls a 5-6) finds the door. Note that if characters split up to search a room more efficiently, only one is likely to search the location of the secret door.
+
+\textbf{One-Way Door:} Some doors may be opened freely from one side but are magically locked from the other, thus allowing access in one direction only.
+
+\section{Traps}\index[general]{Traps}
+Traps are a common hazard that are always a danger to adventurers.
+
+The most common types of trap are often the simplest—pits with fragile covers that will give way when someone walks over them; poison needles in locks so that someone trying to pick the lock will prick themselves on them; blades or spears that are rigged to shoot out of the wall when a flagstone is stepped on; and so on.
+
+Generally, adventurers will have no chance to accidentally notice these traps—although some individual traps that are crude or badly made may offer a chance. Traps must instead usually be detected by magical means or by the \iref[sec:Find Traps]{Find Traps} ability of rogues.
+
+With the exception of large traps involving moving walls—which may be noticed by a dwarf's or gnome's \iref[sec:Stonelore]{Stonelore} ability as they merely pass them—traps must be actively searched for. A rogue does not get to roll for their \iref[sec:Find Traps]{Find Traps} ability by just walking past an area that happens to contain a trap.
+
+Searching a 10-by-10-foot area for traps takes 10 minutes, just like searching for secret doors, and a rogue can search for both types of things at the same time.
+
+When a trap is found, adventurers generally have three options. They can try to get past the trap without setting it off. They can try to set off the trap without getting hurt by it. Or if they are a rogue, they can try to disarm it.
+
+If the attempt to disarm the trap fails, the trap is set off—although the adventurer will usually not get hurt by it, depending on the way the trap works. Should the trap be one that can be triggered more than once without needing to be manually reset, the adventurer may attempt to disarm it a second time.
+
+\example{Black Leaf discovers a trap door rigged to open under the weight of a person and deposit them in a pit. She tries to remove the trap, and fails. The trap door swings open. Although she was not standing on it and therefore hasn’t fallen in, it is now open revealing a 10 feet wide pit that the party must work out how to cross.
+
+Later, the party are walking up some stairs when Oeric steps on a trapped step and a blade scythes out catching him on the leg. While Elfstar heals his wound, Black Leaf attempts to remove the trap so that it won’t go off again and hurt anyone else. Not having a good day, she fails again. The blades scythe once more, but she is not standing on the trapped step so they do not hit her.
+
+Eventually, the party come to a treasure vault containing a pedestal on which sits a golden chalice. Black Leaf discovers that the pedestal is trapped and if the chalice is removed then some gas or liquid will be squirted out of it. She tries to remove the trap and fails yet again. Poisonous gas is ejected from the pedestal and fills the room. Unfortunately, since this fills the whole room leaving nowhere safe to stand, it will affect Black Leaf.}
+
+\section{Environmental Damage}\index[general]{Environmental Damage}\label{sec:Environmental Damage}
+Whether falling down pits, being squirted with burning oil, or being trapped in a room that is slowly filling with water; characters can be subject to a variety of harmful environments.
+
+Listed below are a number of common ways that characters can be hurt by the environment:
+
+\textbf{Falling:} Falling in an uncontrolled manner does 1d6 damage per 10 feet fallen. If a character has deliberately jumped down rather than simply fallen down, they may make a \iref[skill:Jumping]{Jumping} check as if making a high jump from a standing start. Whatever height they get on the \iref[skill:Jumping]{Jumping} check is subtracted from the height of the fall before damage is rolled.
+
+\textbf{Fire:} Being hit with a burning torch will do 1d4 damage.
+
+A natural fire the size of a camp fire will do 1d6 damage per round and each round after the first it has a 5\% chance per point of total damage done of igniting the target’s hair and/or clothing.
+
+Being in a fiercely burning building will do 2d6 damage per round and each round after the first after the first it has a 5\% chance per point of total damage done of igniting the target’s hair and/or clothing.
+
+Burning oil, such as a flask of lamp oil that has been lit and thrown, will do 1d8 damage and also has a 5\% chance per point of damage done of igniting the target’s hair and/or clothing.
+
+Characters whose hair and/or clothing has been ignited will continue to burn for 1d6 rounds doing 1d4 damage per round, unless they have some way of putting out the flames, such as smothering them or dousing them with water.
+
+\example{The inn that Elfstar is staying in has caught fire. The first thing that Elfstar knows about this is when she is awoken by a burning beam crashing through the ceiling of her room onto her bed. In the first round, Elfstar is woken, but takes no damage since the beam missed her.
+
+In the second round, Elfstar takes 1d6 points of damage from being in the burning bed. She rolls a 4, so takes 4 damage, but doesn’t need to roll for her clothing igniting since this is the first round in which she is in the fire. Luckily, Elfstar has unused spells left over from the previous day, and casts Resist Fire on herself. This will prevent her from taking any more damage from non-magical fire sources.
+
+In the third round, Elfstar again takes 1d6 points of damage from being in the burning bed. She rolls a 2, but resists the damage because of her Resist Fire spell. Since this is now the second round that she has been in the fire, she has to roll to see if her clothing ignites. The fire has done a total of 6 damage to her, so her nightshirt has a 6x5\% = 30\% chance of igniting. She rolls a 16, and her nightshirt goes up in flames. Elfstar quickly leaves the burning bed.
+
+In the fourth round, Elfstar is no longer in the burning bed, but her nightshirt is on fire, doing 1d4 damage.
+
+She rolls a 4, but doesn’t mind because her Resist Fire spell is still keeping her safe.
+
+Elfstar now has a dilemma! Does she try to put out the burning nightdress, taking time? Does she throw modesty to the wind and simply rip it off while running to rescue the other patrons of the inn from the fire? Or does she try to rescue the other patrons of the inn while still on fire herself?}
+
+\textbf{Drowning and Suffocating:} Characters who suddenly find themselves unexpectedly unable to breathe (because they’re being choked or because they’ve suddenly been fallen into deep water, for example) can hold their breath for a number of rounds equal to half their \iref[sec:Constitution]{Constitution} score. If the character expects the situation and makes an effort to take deep breaths and hold their breath before entering it, they can hold their breath for a number of rounds equal to their full \iref[sec:Constitution]{Constitution} score.
+
+Once the character can no longer hold their breath, they will start gasping uncontrollably and/or drowning; and will be at a -5 penalty to all activities (and be unable to cast spells) for 1d6 rounds.
+
+Finally, the character will fall unconscious for a further 2d6 rounds before dying. If the character is brought to somewhere where they can breathe during this time, they can be revived by a successful \iref[skill:First Aid]{First Aid} check, or by any magical curing spell (\iref[spell:Cure Light Wounds]{Cure Light Wounds}, \iref[spell:Cure Serious Wounds]{Cure Serious Wounds}, \iref[spell:Cure Critical Wounds]{Cure Critical Wounds} or \iref[spell:Heal]{Heal}).
+
+If a magical curing spell is cast on the character at any time before death but without removing them from the situation in which they cannot breathe, it will bring them back to the start of the suffocation or drowning process, as if they had just taken a deep breath.
+
+\section{Mapping}\index[general]{Mapping}
+It is common for one player to draw a map as the party progresses. The Game Master should encourage this, and should help the players to draw such a map quickly and accurately. Remember that while the players are limited to whatever description the Game Master gives them, the actual characters can see all around them.
+
+While it is somewhat unrealistic for the Game Master to give exact dimensions for rooms and corridors, it is nonetheless good practice, because it helps to offset the fact that the spatial memory of the characters would prevent them getting lost far better than the verbal memory of the players remembering the Game Master’s descriptions will prevent them getting lost.
+
+Misleading or confusing descriptions should only be given if there is an in-character reason for such confusion (such as a magical effect), and the players’ map should not be considered an in-character item that can be lost or destroyed. It is an out of character prop to remind the players of what their characters can remember.
+
+\section{Climbing}\index[general]{Climbing}
+Although only rogues can climb sheer surfaces, all characters can climb ordinary surfaces (tree, sloped rock face, etc.). Characters who climb these surfaces move at half their normal speed.
+
+\section{Swimming}\index[general]{Swimming}
+Characters who are swimming move at half their normal speed. Additionally, a character’s armor is counted three times when determining their swimming speed. Any character whose speed is reduced to zero or less by this extra encumbrance cannot swim at any significant speed but can keep afloat with effort. If a character’s speed is reduced all the way to “cannot move”, then they cannot even keep their head above water without aid.
+
+\section{Wilderness Movement}\index[general]{Wilderness Movement}
+Characters traveling in the wilderness normally do so either on foot or on mounts of some kind.
+
+Riding horses are the most common mount, but in desert environments camels may be more suitable—and characters with a lot to carry may prefer wagons or other vehicles.
+
+The distance that a group can move in a day is based on the movement speed of the slowest member of the group.
+
+On open terrain, a group or individual can move 60\% of their per-round movement speed in miles.
+
+For example, the movement rate of an unencumbered fighter is normally 40 feet per round.
+
+Therefore, an unencumbered fighter can travel 24 miles per day on open terrain.
+
+Difficult terrain such as desert, forest, hills, broken ground; or difficult weather conditions such as snow or heavy rain reduces this movement speed by a third, to 40\% of their per-round movement speed in miles.
+
+Extreme terrain such as mountains, jungle, swamp or glaciers reduces the open terrain movement speed by half, to 30\% of their per-round movement rate in miles.
+
+Finally, paved roads increase movement speed by a half, to 90\% of their per-round movement rate in miles, except in snow conditions; and established but unpaved trails increase movement speed by a half, to 90\% of their per-round movement rate in miles, except in snow or heavy rain conditions.
+
+\fullref{tab:Wilderness Movement} shows the movement rates (in miles per day) on each type of terrain for creatures with base speeds ranging from 10-80 feet per round.
+
+It is important to remember that the movement rates shown in those tables are for completely unencumbered people and are therefore unlikely to be reached by actual travelers.
+
+Armored characters will typically move half of normal speed, and unarmored humans carrying packs containing food and gear will typically move two-thirds of normal speed. Similarly, although rider-less horses can move at 80 feet, a horse with a saddle and rider will typically move at half that speed.
+
+See \fullref{sec:Encumbrance and Weight} for more details on how encumbrance affects movement rates.
+
+\begin {table}[H]
+  \caption{Wilderness Movement}\label{tab:Wilderness Movement}
+	\begin{tabularx}{\columnwidth}{>{\bfseries}YYYYY}
+	\thead{} & \multicolumn{4}{c}{\thead{Per-Day Movement Rate}}\\
+	\thead{Per-round Movement Rate} & \thead{Road Trail} & \thead{Open Terrain} & \thead{Broken Ground, Desert, Forest, Hills, Mud, Snow} & \thead{Glaciers, Jungle, Mountain, Swamp}\\
+	10 ft. & 9 miles & 6 miles & 4 miles & 3 miles\\
+	20 ft. & 18 miles & 12 miles & 8 miles & 6 miles\\
+	30 ft. (e.g. Draft Horse) & 27 miles & 18 miles & 12 miles & 9 miles\\
+	40 ft. (e.g. Human) & 36 miles & 24 miles & 16 miles & 12 miles\\
+	50 ft. (e.g. Camel) & 45 miles & 30 miles & 20 miles & 15 miles\\
+	60 ft. & 54 miles & 36 miles & 24 miles & 18 miles\\
+	70 ft. (e.g. Pony) & 63 miles & 42 miles & 28 miles & 21 miles\\
+	80 ft. (e.g. Riding Horse) & 72 miles & 48 miles & 32 miles & 24 miles
+  \end {tabularx}
+\end {table}
+
+\subsection{Mixed Terrain}\index[general]{Mixed Terrain}
+Someone traveling on a mix of terrain during the same day travels at a rate governed by the majority of the terrain that they traveled across.
+
+The sole exception to this (and this only happens in very rare circumstances) is that this method can sometimes result in someone traveling across more of a particular terrain type in a partial day than they normally could in a whole day, because they spent the majority of the day traveling on a much less difficult terrain.
+
+In this rare case, the person’s travel distance over the more difficult terrain is limited to the amount they could normally travel on that terrain in a whole day.
+
+\example{Black Leaf is leaving town in possession of a treasure map that she has found. The map shows a site to the north of a mountain pass.
+
+The place that is marked on Black Leaf’s map as the point at which to leave the road and start heading north is 20 miles away from the town.
+
+With Black Leaf’s normal movement rate of 40 feet per round, she can travel 36 miles per day along the mountain pass (a road), and 12 miles per day in the mountains. Since she is traveling 20 miles on the road before turning off, the majority of her day’s journey will be on the road and she therefore travels at her road speed—36 miles per day.
+
+However, this would take her along 20 miles of road, followed by 16 miles of mountains. In a whole day she can only travel across 12 miles of mountains, so her movement in the mountains is limited to this value.
+
+Therefore, at the end of the first day, she has traveled along 20 miles of road and 12 miles of mountains, and camps for the night three-fourths through the mountains.}
+
+\subsection{Fatigue}\index[general]{Fatigue}
+Creatures that are traveling long distances must rest for a full day for every six days that they travel.
+
+Failure to do so results in a cumulative -1 penalty to to-hit and damage rolls due to long term fatigue per six days (or part of six days) of continuous travel after the initial six.
+
+This penalty is reduced by 1 for each full day of rest taken.
+
+\example{Elfstar and Black Leaf are traveling to the capital. Unfortunately they have no horses, so they are traveling on foot.
+
+Although Black Leaf is relatively unencumbered, Elfstar’s armor means that she moves at only 30 feet per round.
+
+The city is 240 miles away. Given Elfstar’s movement rate, they pair can travel 27 miles per day. After six days of traveling, they have walked a total of 162 miles.
+
+They now have a choice. They still have 78 miles to go, and at their walking speed this will take them another three days to walk.
+
+They can press on, completing the whole journey in 9 days, but fatiguing themselves with a -1 penalty; or they can rest for a day before continuing. This will make the journey last an extra day, but they will not be fatigued when they arrive.
+
+Black Leaf’s suggestion of a third option—stealing a couple of horses and getting there in a day without fatigue (because they only walked for six days and the horses only walked for one day) is vetoed by Elfstar. But she does agree to see if there are any horses for sale.}
+
+\subsection{Getting Lost}\index[general]{Getting Lost}
+It is difficult to get lost following a road or established trail, but when traveling through the wilderness away from such easy guides it is remarkably easy to get lost.
+
+Each day that a party travels in wilderness without roads or trails, the party member who is leading the group (which may be an NPC guide of some kind) must make a \iref[sec:Wisdom]{Wisdom} check using their Navigating skill. The Game Master should give modifiers to the roll for things like prominent landmarks or the character living locally and having local knowledge of the area.
+
+If the player makes the roll, they are confident of their location and the party goes in the direction that they intend to go.
+
+If the player fails the roll, the Game Master should secretly roll 1d6.
+
+If the party are in open terrain, then they will get lost on a roll of 1.
+
+If the party are in swamp, desert or jungle, then they will get lost on a roll of 1-3.
+
+If the party are in other terrain, then they will get lost on a roll of 1-2.
+
+If the party becomes lost, the players should not be informed of this.
+
+Instead, the Game Master should roll again to see which direction the party end up going in (it is better for the Game Master to always make this roll, even if it is not necessary—that way the players don’t know whether or not their characters are lost).
+
+If the second roll is 1-3, the party accidentally travel 60° to the left of their intended direction. If the second roll is 4-6, the party accidentally travel 60° to the right of their intended direction.
+
+The players should not be informed that their characters have become lost, and the Game Master should do their best to describe directions as if the characters were actually going the way they think they’re going.
+
+Once lost, the leader of the group still makes a \iref[skill:Navigating]{Navigating} check each day. If they keep failing the checks, they will continue to travel the way they were traveling the previous day without realizing their error (and the Game Master must roll again to see if they veer further off course).
+
+Once the party leader succeeds in their daily \iref[skill:Navigating]{Navigating} check, they will realize that they are traveling in the wrong direction (and which direction they are actually traveling in) and—if they were intending to travel to a specific location rather than just exploring—which direction their destination now lies in.
+
+\example{Aloysius is traveling through the desert by camel. He has a \iref[sec:Wisdom]{Wisdom} of 9, and possesses no Navigating skill.
+
+Unfortunately, his local guide has died; and he is trying to find his way back to the oasis by himself. He knows that it is south of his current location.
+
+On the first day, Andy (Aloysius’s player) rolls a Navigating check and fails. Aloysius is, unsurprisingly, not entirely sure that he is heading in the right direction.
+
+The Game Master secretly rolls a d6 to see if he gets lost, and a second d6 to see the direction that he will get turned in if he does get lost.
+
+The first d6 is a 1, which means that Aloysius will be lost, and the second d6 is a 4, which means that he will actually spend the day traveling southwest, thinking he is traveling south.
+
+After traveling what he thinks is south for the whole day, Aloysius camps for the night.
+
+On the second day, he tries a Navigating check again, and fails again.
+
+The Game Master rolls the two d6s again, and this time the first one comes up with a 5. So Aloysius doesn’t get turned around and carries on traveling southwest (although he—and Andy—still thinks he is traveling south).
+
+After a second day of traveling southwest, Aloysius makes another Navigating check on the third morning.
+
+This time he succeeds, and realizes that he is traveling southwest instead of south. Unfortunately he doesn’t know how long he has been going in the wrong direction for. However, he does recognize some landmarks and realizes that he needs to head east from his current location in order to reach the oasis.
+
+Cursing his lack of direction sense, and hoping he doesn’t get lost again, he turns around and heads east.}
+
+\subsection{Foraging}\index[general]{Foraging}
+Although wise adventurers carry supplies with them, they sometimes prefer to—or need to—supplement their carried food with fresh food, whether hunted or foraged.
+
+Characters who are traveling can gather food while on the move.
+
+If the party move at only 2/3 of their normal per-day movement rate, they can gather (from hunting and foraging) half of their day’s food at the same time, meaning they only need to use half of a day’s carried food supply each day.
+
+If the party chooses to remain stationary, they can gather (from hunting and foraging) a whole day’s food, and don’t need to use any of their carried supplies.
+
+In either case, if the party member leading the foraging or hunting (which may be an NPC guide) succeeds in either a \iref[skill:Tracking]{Tracking} check or a \iref[skill:Nature Lore]{Nature Lore} check (they may choose which check to make, but cannot attempt both), twice as much food is gathered that day.
+
+It is important to remember that if a party hunts while stationary in order to provide themselves with a food supply that they can carry with them for use while on the move, such unpreserved food supplies will only last a week before becoming inedible.
+
+Parties who remain stationary cannot count a day spent gathering food as a day spent resting for the sake of avoiding or reducing fatigue.
+
+At the Game Master’s discretion, some unusual locations might have an abundance or a dearth of food supplies, so foraging may be more or less effective in those locations.
+
+\section{Waterborne Movement}\index[general]{Waterborne Movement}\label{sec:Waterborne Movement}
+Taking to the seas can be an efficient way of traveling long distances. However, it is not without risk.
+
+\fullref{tab:Waterborne Movement and Hull Strength} shows the movement rates of various types of ship. Some ships, such as galleys and longships, are given two movement rates because they can either sail or be rowed.
+
+Rowing is much harder work than walking over long distances, so all row powered ships and boats have smaller per-day movement rates than their per-round movement rates would otherwise indicate. However, this reduced speed takes into account rower fatigue, so rowed ships and boats do not need to stop every six days for their crew to recover.
+
+\begin {table}[H]
+  \caption{Waterborne Movement and Hull Strength}\label{tab:Waterborne Movement and Hull Strength}
+  \begin{tabularx}{\columnwidth}{>{\bfseries}cYYcY}
+	\thead{} & \multicolumn{2}{c}{\thead{Movement Rate*}} & \thead{} & \thead{}\\
+	\thead{Ship Type} & \thead{Miles/Day} & \thead{Feet/Round} & \thead{AC} & \thead{Structure Points}\\
+	River Barge & 36 miles & 60 ft. & 8 & 20-40\\
+	Barque & 90 miles & 150 ft. & 8 & 60-90\\
+	Canoe, River & 18 miles & 60 ft. & 9 & 5-10\\
+	Canoe, Sea & 18 miles & 60 ft. & 9 & 5-10\\
+	Galley & 18/90 miles & 90 ft./150 ft. & 8 & 80-100\\
+	Longship & 18/90 miles & 90 ft./150 ft. & 8 & 60-80\\
+	Quinquirime & 12/72 miles & 60 ft./120 ft. & 7 & 120-150\\
+	Raft, Professional & 12 miles & 30 ft. & 9 & 5-10\\
+	Raft, Scavenged & 12 miles & 30 ft. & 9 & 3-5\\
+	Rowing Boat & 18 miles & 30 ft. & 9 & 10-20\\
+	Skiff & 72 miles & 120 ft. & 8 & 20-40\\
+	Sloop & 72 miles & 120 ft. & 7 & 120-180\\
+	Trireme & 18/72 miles & 90 ft./120 ft. & 7 & 100-120\\
+	Troopship & 54 miles & 90 ft. & 7 & 160-220
+	\end {tabularx}
+	* When two movement rates are given, the first is for rowing and the second is for sailing.
+\end {table}
+
+\subsection{Wind and Storms}\index[general]{Winds and Storms}
+Sailing ships need wind to be able to travel, and are surprisingly adept at traveling even upwind by tacking.
+
+For the purposes of Dark Dungeons, it is not necessary to track the exact wind direction and speed under normal circumstances. The sailing speeds of the various ships are averaged.
+
+However, there are two wind conditions that can affect ships. They can become becalmed, or they can be lost in storms.
+
+Each day that the party are out at sea (but not when they are sailing on inland lakes or rivers), the Game Master should roll 2d6.
+
+If the Game Master rolls a 2, then there is no wind, and ships will become becalmed.
+
+If the Game Master rolls a 12, there is a storm that day.
+
+Any other result has no effect on sea travel.
+
+\subsubsection{Becalmed}
+When there is no wind, ships with sails cannot use them to move. Any such ship must either have the crew row, or must stay where it is for the day.
+
+Ships with both sails and oars, such as galleys and longships, may still move by rowing while becalmed.
+
+\subsubsection{Storms}
+Storms are very dangerous to ships at sea. They can destroy even the largest ship unless the ship can “run before the storm”.
+
+When the dice indicate that there is a storm, the first thing that the Game Master must do is to determine the wind direction randomly.
+
+If the ship has working sails, the captain must decide whether to run before the storm or to try to weather it. The former is by far the safest option unless the wind is blowing the ship towards land.
+
+If the ship runs before the storm, it moves at triple its normal daily movement rate in the direction of the wind.
+
+If this does not bring it up against a coastline then the ship is safe. However, if the ship is blown onto the coast when running before a storm then there is a 75\% chance of it breaking up on rocks and sinking and a 25\% chance of it being able to find a safe haven such as a port or a natural bay.
+
+If the ship’s captain chooses to take down the sails and weather the storm, of if the ship does not have sails, then the ship will move half of its normal daily movement rate in the direction of the wind, and will have an 80\% chance of breaking up in the storm and sinking.
+
+If the ship does not break up, and this movement does not bring it up against a coastline, then the ship is safe. However, if the ship is blown onto the coast when weathering a storm then there is a 75\% chance of it breaking up on rocks and sinking and a 25\% chance of it being able to find a safe haven such as a port or a natural bay.
+
+\subsection{Lost at Sea}
+When traveling across the sea, ships can get lost just as land travelers can get lost.
+
+Any day that a ship starts out of sight of land (normally this will be any time it starts a day more than 8 miles from land) there is a chance for it to become lost.
+
+The procedure is the same as wilderness travel. The ship’s navigator (which may be a PC or an NPC) rolls a \iref[skill:Navigating]{Navigating} check, and if successful the ship is on course.
+
+If the player fails the roll, the Game Master should secretly roll 1d6. The party will get lost on a roll of 1-2.
+
+If the party becomes lost, the players should not be informed of this. Instead, the Game Master should roll again to see which direction the party end up going in (it is better for the Game Master to always make this roll, even if it is not necessary—that way the players don’t know whether or not their characters are lost).
+
+If the second roll is 1-3, the party accidentally travel 60° to the left of their intended direction. If the second roll is 4-6, the party accidentally travel 60° to the right of their intended direction.
+
+The players should not be informed that their characters have become lost, and the Game Master should do their best to describe directions as if the characters were actually going the way they think they’re going.
+
+Once lost, the leader of the group still makes a \iref[skill:Navigating]{Navigating} check each day. If they keep failing the checks, they will continue to travel the way they were traveling the previous day without realizing their error (and the Game Master must roll again to see if they veer further off course).
+
+Once the party leader succeeds in their daily \iref[skill:Navigating]{Navigating} check, they will realize that they are traveling in the wrong direction (and which direction they are actually traveling in), and—if they were intending to travel to a specific location rather than just exploring—which direction their destination now lies in.
+
+\section{Airborne Movement}\index[general]{Airborne Movement}
+There are a variety of ways that characters can travel by air. They may have mounts that can fly, such as pegasi, hippogriffs or even dragons. They may have magical flying devices such as a \iref[mitem:Broom of Flying]{Broom of Flying} or a \iref[mitem:Flying Carpet]{Flying Carpet}. Or they may have a flying ship equipped with a \iref[eq:Sail of Skysailing]{Sail of Skysailing}.
+
+\subsection{Mounts and Devices}\index[general]{Flying Mounts and Devices}
+Traveling by riding a flying mount or magical device uses the same movement rules as wilderness movement. The only difference being that all terrain is considered to be “road” for purposes of converting per-round movement speeds into daily movement speeds; with the exception of heavy rain and snow, which still reduce daily movement rates as normal.
+
+When traveling on a flying mount or magical device, characters have no chance of getting lost. However, characters on flying mounts and devices are still subject to fatigue if they travel for more than six days without taking a rest day.
+
+Character on flying mounts or devices cannot gather food while on the move.
+
+\subsection{Skysailing}\index[general]{Skysailing}\label{sec:Skysailing}
+Ships that are equipped with a \iref[eq:Sail of Skysailing]{Sail of Skysailing} can fly at incredible speeds through the air. However, in order to do this they must be powered by a spellcaster.
+
+If a non-spell user takes the wheel of ship that has a \iref[eq:Sail of Skysailing]{Sail of Skysailing}, it acts in all ways as a normal ship. However, if a spell user (i.e. a cleric, druid, elf, shaman, sorcerer, or wizard) takes the wheel, they may concentrate for a round in order to activate the sails. For the rest of the day, that spell user may — while at the wheel - make the ship fly and control its course and speed. Activating the sails drains the spell user of all spells they currently had prepared for the day, as if those spells had been cast.
+
+The speed of the ship is determined by the effective level of the spell user who is controlling it. This effective level is based on the actual level of the spellcaster, but reduced by three for each spell they have cast during the day prior to activating the sail, to a minimum of first level. \fullref{tab:Skysailing Speeds} to see the flying speed of the ship based on the spell user’s effective level.
+
+The spell user must remain at the wheel of the ship for the duration of the flight. Leaving for more than 10 minutes stops the ship, and it starts sinking to the ground at a rate of 50 feet per round (5 feet per second).
+
+If this causes the ship to crash in water deep enough to hold it then it will be fine (assuming it is not damaged beyond seaworthiness, of course). If it lands on the ground it will take damage equal to 1d100\% of its structure points.
+
+Control of the ship may be regained by any spell user who spends a round re-activating the ship. Remember, however, that the original spell user will have used all their spells the first time they controlled it, so if they re-establish control they will be effectively first level.
+
+A single spell user can fly a ship for 8 hours without a problem (and the daily movement rates in \fullref{tab:Skysailing Speeds} are based on an 8-hour traveling day). The spellcaster can pull a ‘double shift’ at the wheel, lasting for up to 16 hours, but for the second 8-hour shift they only have an effective level of one; and they will not regain spells the following morning, but must rest for a full day before they can regain spells or re-activate the sail.
+
+Although the speed and heading of the ship are controlled by the spell user at the wheel, the ship still needs a full complement of crew to be controlled. Without a full complement of crew, the spell user at the wheel can make the ship rise and hover in place, but cannot make it fly in a straight line. Any attempt at horizontal movement will be at the mercy of the winds.
+
+However, ships such as galleys that are normally supplemented by rowers do need them while flying. They do, however, need them if the land on water and wish to sail normally.
+
+\begin {table}[H]
+	\caption{Skysailing Speeds}\label{tab:Skysailing Speeds}
+	\begin{tabularx}{\columnwidth}{>{\bfseries}M{.8in}YYY}
+	\thead{} &  \thead{} & \multicolumn{2}{c}{\thead{Cruising Speed}}\\
+	\thead{Effective Spellcaster Level*} & \thead{Maneuvering Speed} & \thead{Feet per round} & \thead{Miles per day}\\
+	1 & 20’/round & 400’/round & 400 miles\\
+	2 & 20’/round & 400’/round & 400 miles\\
+	3 & 20’/round & 400’/round & 400 miles\\
+	4 & 20’/round & 400’/round & 400 miles\\
+	5 & 20’/round & 400’/round & 400 miles\\
+	6 & 40’/round & 800’/round & 800 miles\\
+	7 & 40’/round & 800’/round & 800 miles\\
+	8 & 40’/round & 800’/round & 800 miles\\
+	9 & 60’/round & 1,200’/round & 1,200 miles\\
+	10 & 60’/round & 1,200’/round & 1,200 miles\\
+	11 & 60’/round & 1,200’/round & 1,200 miles\\
+	12 & 60’/round & 1,200’/round & 1,200 miles\\
+	13 & 80’/round & 1,600’/round & 1,600 miles\\
+	14 & 80’/round & 1,600’/round & 1,600 miles\\
+	15 & 80’/round & 1,600’/round & 1,600 miles\\
+	16 & 80’/round & 1,600’/round & 1,600 miles\\
+	17 & 100’/round & 2,000’/round & 2,000 miles\\
+	18 & 100’/round & 2,000’/round & 2,000 miles\\
+	19 & 100’/round & 2,000’/round & 2,000 miles\\
+	20 & 120’/round & 2,400’/round & 2,400 miles\\
+	21 & 120’/round & 2,400’/round & 2,400 miles\\
+	22 & 120’/round & 2,400’/round & 2,400 miles\\
+	23 & 120’/round & 2,400’/round & 2,400 miles\\
+	24 & 140’/round & 2,800’/round & 2,800 miles\\
+	25 & 140’/round & 2,800’/round & 2,800 miles\\
+	26 & 140’/round & 2,800’/round & 2,800 miles\\
+	27 & 160’/round & 3,200’/round & 3,200 miles\\
+	28 & 160’/round & 3,200’/round & 3,200 miles\\
+	29 & 160’/round & 3,200’/round & 3,200 miles\\
+	30 & 160’/round & 3,200’/round & 3,200 miles\\
+	31 & 180’/round & 3,600’/round & 3,600 miles\\
+	32 & 180’/round & 3,600’/round & 3,600 miles\\
+	33 & 180’/round & 3,600’/round & 3,600 miles\\
+	34 & 180’/round & 3,600’/round & 3,600 miles\\
+	35 & 200’/round & 4,000’/round & 4,000 miles\\
+	36 & 200’/round & 4,000’/round & 4,000 miles
+	\end {tabularx}
+	*See text for reductions to effective spellcaster level
+\end {table}
+
+\subsubsection{Take Off and Landing}
+The incredible flight speeds of ships equipped with a \iref[eq:Sail of Skysailing]{Sail of Skysailing} can only be maintained in a roughly straight line, and are therefore only usually used at high altitude. When traveling at a low altitude, or taking off and landing, ships must drop to maneuvering speed. This is much slower, but allows the ship to make significant heading changes and to do fine maneuvers in order to land in a harbor or dry-dock.
+
+A ship can be flown at cruising speed at low altitude, but doing so is often suicidally dangerous.
+
+Switching from maneuvering speed to cruising speed (or vice versa) takes 1d8 rounds of concentration.
+
+A ship equipped with a \iref[eq:Sail of Skysailing]{Sail of Skysailing} can land and take off normally on water, or from a specially constructed frame resembling a dry-dock where ships are built. Taking off in either situation requires 1d8 rounds of concentration in order to start the ship moving.
+
+If a ship is forced to land in a controlled manner on normal ground, it will not be damaged, but it will roll onto its side. It will not be able to take off again unless it is righted and held upright for the duration of the take off.
+
+\subsubsection{Leaving the Planet}
+Ships equipped with a \iref[eq:Sail of Skysailing]{Sail of Skysailing} have no upper altitude limit. Providing they have an adequate air supply, they may leave the planet completely and fly through space at speeds dwarfing even the fastest air speed to get to other planets and moons—or even leave the \iref[sec:The Celestial Sphere]{Celestial Sphere} completely and fly through the \iref[sec:Luminiferous Aether]{Luminiferous Aether} to other spheres.
+
+See \fullref{chap:Other Worlds} for detailed rules about flying outside the atmosphere.
+
+\end{multicols*}
+
