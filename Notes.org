@@ -1,0 +1,41 @@
+#-*- Mode: org -*-
+#+STARTUP: overview
+
+**** Dark Dungeons
+***** Notes
+****http://connect.lulu.com/t5/Interior-Formatting/How-big-should-my-margins-be/ta-p/31404
+****http://rpg.stackexchange.com/questions/17126/in-calculating-basic-dd-monster-experience-whats-a-special-ability
+****** Possible Statblock
+Size: 
+Type: 
+Intelligence: 
+Alignment: 
+Habitat: 
+Wandering Group: 
+Lair Group: 
+Move: 
+Attacks: 
+Special:
+Armor Class: 
+Save: 
+Hit Dice: 
+Morale: 
+*XP Value: 
+****** Average Hit Dice
+| Die | Average |
+|-----+---------|
+| d4  | 2.5     |
+| d6  | 3.5     |
+| d8  | 4.5     |
+| d12 | 6.5     |
+| d20 | 10.5    |
+****** Footnotes
+| Count | Symbol                                                                |
+|-------+-----------------------------------------------------------------------|
+| 1     | * (asterisk; but do not use if p values occur in the table; see 3.78) |
+| 2     | † (dagger)                                                            |
+| 3     | ‡ (double dagger)                                                     |
+| 4     | § (section mark)                                                      |
+| 5     | `\|\|` (parallels)                                                    |
+| 6     | # (number sign, or pound)                                             |
+

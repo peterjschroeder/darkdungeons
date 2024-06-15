@@ -1,0 +1,571 @@
+#-*- Mode: org -*-
+#+STARTUP: overview
+
+**** Dark Dungeons
+***** FIX
+Change Balance and Jump to Acrobat's base minus some
+Give Acrobat, Gremlin, etc skill points in balance, jump equal to their base
+Orc has weakness ability
+Gremlin Backfire doesn't look right
+Recheck acrobat for additional abilities
+Other Halfling Home ability?
+****** Required skills in pc books, maybe gaz
+Bard
+******* PC2
+Faenare: Direction sense (W), Singing (Ch), and
+Survival (I) (hills/mountains) are plausible initial
+skills. Singing may well be taken as Singing + 1.
+Gnome: Gnomes must have two of the following
+(and possibly more): Fantasy Physics (W), Machine
+Building (I), a Science (I) skill, and any other Knowl-
+edge (I) skill.
+Gremlin: It is very unclear as to what skills could
+possibly benefit a gremlin. Perhaps Machine Destruc-
+tion (I), a reversed form of Machine Building (see
+gnome), is a possibility. Others are really up to player
+and DM ingenuity!
+Harpy: Animal empathy, Direction sense (W), Evade
+(D) (see GAZ 7), and Tracking (I) (prey!) are all possi-
+bilities. Harpies do not need the Sing skill; they have
+innate singing skills.
+Nagpa: Nagpa must take (at least) three Knowl-
+edge skills, and other possibilities include Appraisal
+(I) (see GAZ 9), Teaching (W), and even Storytelling
+(Ch).
+An important point about nagpa, which applies to
+beginning and acquired skills, is that old and arcane
+languages can be taken as Knowledge skills if desired
+******* PC3
+Aquatic Elf: Ancient History (In), Planar Geography (In)
+Kna: Bargain (Ch), Know Market Value (In), Crossbow
+Maker (In)
+Kopru: Deceive (Ch), Muscle (St)
+Merrow: Mammal Empathy (Wi), Dodge (Dx)
+Nixie: Allure (Ch), Fish Empathy (Giant Bass) (Wi)
+Sea Giant: Endurance (Co), Intimidate (St)
+Shark-kin: Alertness (Dx),Rip (Dx)
+%ton: Cleric: Honor Immortal (Wi), Mysticism (Wi);
+Mage: Alternate Magics (In), Coral Manipulation
+(In); Cleric/mage: Honor Immortal m i ) , Mysticism
+(Wi), Alternate Magics (In), Coral Manipulation (In)
+****** Spells
+******* Medicine Man
++Check spellchart statblock declaration
+Animal Charm
+Bind Totem
+Call Totem
+Detect Totem
+Eye of the Eagle
+Fire Gate
+Firebow
+Hunting Paint
+Infusion
+Locate Totem
+Minor Blessing
+Sanctify
+Thunder Drum
+Totem Mastery
+War Paint
+Wrath of Atruaghin
+******** Merge
+Polymorph Self
+Commune (Commune with Spirit Lord)
+******* Condense Spell Text
+******** Create Monsters/Animals
+Create Magical Monsters
+Create Normal Animals
+Create Normal Monsters
+Create Any Monster
+******** Charm
+Charm Animal
+Charm Monster
+Charm Person
+Charm Plant
+Charm, Mass
+******** Cure
+Cure Critical Wounds
+Cure Light Wounds
+Cure Serious Wounds
+******** Growth
+Growth of Animal
+Growth of Plants
+******** Hold
+Hold Animal
+Hold Monster
+Hold Person
+******** Invisibility
+Invisibility
+Invisibility 10-foot radius
+Invisibilit, Mass
+
+******** ... to ...
+******** Form
+******** Locate
+Locate
+Locate Object
+
+******** Polymorph
+Polymorph Any Object
+Polymorph Other
+Polymorph Self
+******** Power Word
+Power Word Blind
+Power Word Kill
+Power Word Stun
+******** Raise Dead
+Raise Dead
+Raise Dead Fully
+******** Resist
+Resist Cold
+Resist Fire
+
+******** Silence
+******** Speak
+******** Summon
+******** Teleport
+******** Wall
+****** References
+******* Classes
+******* Combat
+******* Encounters
+******* Monsters
+******* Other Worlds
+******* Remove references from examples
+******* Spells
+******** 15 - Immortals
+******** 17 - Monsters
+******** 18 - Treasure
+******* Strongholds
+******* Treasure
+******* Sections
+******** Elemental Plane
+******** Embodied Form
+******** Ethereal Plane
+******** Immortal Level Spells
+******** Infravision
+******** Prime Plane (ilink)
+******** Prime Requisite
+******* Equipment
+******** Red Powder
+******** Sail of Skysailing
+******* Chapter
+******* Immortal
+****** +LaTeX
+******* Spacing below monsterimage
+******* Vertically center 2line headers
+******* Header
+******** Right leaf needs chopping
+******* Header (Chapter)
+center text perfectly
+vspace below image
+******* Table of Contents
+Title spacing may not be correct
+***** Missing
+****** Monsters
+Carrying Capacity
+Some Monsters have ranged HD
+******* Rules Cyclopedia
+Dragon, Gold
+Giant, Mountain
+Golem, Drolem (Dragon Golem)
+Slug, Giant
+Snail, Giant
+Whale, Great
+Whale, Nar
+******** Requires Name Change
+Adaptor (Conformer)
+Beholder, Blast Spore (Gazer, Gas)
+Beholder, Sporacle (Gazer, Spore)
+Devilfish (Fiendfish)
+Grab Grass (Seize Sod)
+Helion (Helixion)
+Horde (Colony)
+Mek (Insectadrone)
+Metamorph (Shifter)
+Nightmare Creature, Malfera (Fermala)
+Plasm
+Plasm, Giant
+******* Wrath of the Immortals
+Nightmare Creature, Diabolus
+Monster Ruler
+Titan
+Zombie, Lightning, Greater
+Zombie, Lightning, Lesser
+******** Requires Name Change
+Flicker
+Jumper
+Notion
+Servitor
+Spider, Plopped
+Sprackle, Greater
+Sprackle, Lesser
+****** Rules
+******* anyone can find room traps 1 out of 6 (16%)
+******* Combat
+******** Mass Combat - Create Food (Dragon #187 40)
+******** Nonlethal Combat
+******** Unarmed Combat (Striking, Wrestling)
+******* Equipment
+******** Barding (Multiplier, Load, Other Animals)
+******* Game Master Advice
+******** Ability Score Save Bonus
+******** Arguments and Complaints
+******** Campaigning
+******** Clues
+******** Damage to Magical Items
+******** Equipment Not Listed
+******** Lost Spell Books
+******** Maps
+******** Multiple Characters
+******** New Items and Monsters
+******** Overusing Dice
+******** Reality Shifts
+******** Record Keeping
+******** Retiring Characters
+******** Transfering Characters
+******* Immortals
+******** Avatars
+******* Treasure
+******** Magic Item Damage
+***** Expand
+****** http://pandius.com/usfltbls.html
+****** Classes
+******* Aristocrat
+******** Noble
+******* Cleric
+******** Defiler
+******** Friar
+******* Dwarf
+******** Dwarven Craftmagic
+******** Dwarven Science
+******* Fighter
+******** Beastmaster
+******** Cavalier
+******** Gladiator
+******** Monster Slayer
+******** Samurai
+******** Viking
+******* Gnome
+******** Sky Gnome
+******* Engineer
+******** Sample Inventions
+Sound Cannon
+Bioblaster (Poison gun)
+Debilitator (Random Weakness)
+Flash (Bright Light)
+******** Inventor
+******* Monk
+******** Sumotori
+******* Monster
+******** Lycanthropes
+********* Werejaguar
+********** Create One
+********* Weresabretooth
+********** Create One
+********* Wererat, Lesser
+********* Wereseal, Harbor
+******** Mutant Animal
+******* Psionicist
+
+******* Secondary Classes
+******** Merchant
+******* Superhero
+Can control powers to limit them
+******* Rogue
+******** Harlequin
+******** Illusionist
+******** Jester
+******** Mimic
+******** Ninja
+******** Overnight Convenience Store Clerk
+******** Pirate
+******** Scout
+******** Thief (Frank Mentzer&apos;s)
+******* Ultraist
+******* Wizard
+******** Alchemist
+******** Apothecary
+******** Herbalist
+******** Loremaster
+******** Sage
+******** Witch
+******* Thief Abilities
+******** Climb Walls - Climb Inverted Overhang
+******** Detect Magic
+******** Disguise
+******** Escape Bonds
+******** Fence Goods
+******** Find Traps
+******** Forgery
+******** Hear Noise
+******** Hide in Shadows - Hide in Plain Sight
+******** Mimic Speech
+******** Move Silently - Run Silently
+******** Open Locks - Open Magical Lock
+******** Pick Pockets - Sleight of Hand
+******** Read Languages - Write Languages
+******** Remove Traps - Set Traps
+******** Tunnel
+******** Use Magic-User Scroll
+******** Ventriloquize
+****** Encounters
+******* Lost World
+******* Planes
+******* Skysailing
+******* Space
+****** Monsters
+******* Animals
+******** Albatross, Giant
+******** Bird, Kookaburra
+******** Bird, Magpie
+******** Bird, Raven &amp; Crow
+******** Bird, Swan
+******** Cat, Great, Cheetah
+******** Cat, Great, Lion, Spotted
+******** Cat, Lynx
+******** Cat, Wild
+******** Dog
+******** Dog, Dingo
+******** Dustmite
+******** Echidna
+******** Eel, Electric
+******** Eel, Weed
+******** Fish, Auratus
+******** Gerbil
+******** Gull, Giant
+******** Horse, War, Light
+******** Kangaroo
+******** Koala
+******** Lizard, Chameleon
+******** Lizard, Goanna
+******** Monkey
+******** Pelican, Giant
+******** Pig
+******** Rhinoceros
+******** Rhinoceros, Baluchitherium
+******** Rhinoceros, Titanothere
+******** Rhinoceros, Woolly
+******** Scorpion
+******** Seal, Fur
+******** Skunk
+******** Snake, Viper, Flying
+******** Spider, Wood, Huge
+******** Turkey, Wild
+******* Animals (Giant)
+******** Amoeba, Giant
+******** Beetle, Earthquake
+******** Beetle, Spitting (Bombardier)
+******** Eel, Swamp, Giant
+******** Fish, Carp, Gargantuan
+******** Fish, Cat-, Giant
+******** Fly, Horse-, Giant
+******** Frog, Poison, Giant
+******** Jellyfish, Man-O-War, Giant
+******** Leech, Young, Giant
+******** Monkey, Marmoset, Giant
+******** Octopus, Giant
+******** Oyster, Giant
+******** Porcupine, Giant
+******** Sea Horse
+******** Slug, Freshwater, Giant
+******** Spider, Hunting, Giant
+******** Spider, Jumping, Large
+******** Spider, Sand, Giant
+******** Spider, Spitting, Giant
+******** Squid, Giant
+******** Termite, Giant
+******** Worm, Great Annelid
+******* Animals (Prehistoric)
+******** Hyena, Hyaenodon
+******** Sloth, Megatherium
+******* Men
+******** Man, Primitive
+******** Man, Hide Hunter
+******* Mythology
+******** Angel, Guardian
+******** Brownie, Redcap
+******** Dinosaur, Lake Klintest Monster (Lochnar)
+******** Elven Dog (Coin-Sith)
+******** Faerie, Tepictoton
+******** Haunt, Possession
+******** Homunculus
+******** Lamia
+******** Nightmare
+******** Nightmare Creature, Tzitzimitl
+******** Sea Serpent
+******** Snake, Feathered Serpent
+******** Unicorn, Colt-pixy
+******** Vampire, Nosferatu
+******* Templates
+******** Flightless Bird (Emu)
+******** Ostrich, Phororhacos (Sword Beak)
+******** Skeleton Monster (Skeletal Beast)
+******** Zombie Monster (Minotaur Zombie, Undead Chimera, Undead Sphinx)
+******* Variants
+******** Dragon, Brown
+******** Golem, Bamboo
+******** Golem, Ice
+******** Golem, Iron
+******** Golem, Rock
+******** Golem, Silver
+******** Statue, Living, Jade
+******** Statue, Living, Silver
+******** Statue, Living, Steel
+****** Rules
+******* +Sort
+******** Epic Heroes
+******** https://bruce-heard.blogspot.com/2020/05/EpicHeroes.html
+******** Engineering
+******** Fantasy Engineering
+******** Gnome Device Construction
+******** Trade
+******** Cargo Trade
+******** Mercantile Trade
+******** Speculative Trade
+******** Underage Adventurers
+******** https://bruce-heard.blogspot.com/2019/06/underage-adventurers.html
+******** Environmental Effects (Abilities)
+******* Ability Scores
+******** Improving Ability Scores
+******** https://bruce-heard.blogspot.com/2018/08/AbilityScores.html
+******* Character Creation
+******** Afflictions and Accidents
+******** http://pandius.com/strygen1.html
+******** Dwarven Names
+******* Classes
+******** Demi-Races
+******** Open Locks Alternative
+******** Racial Tolerance
+******* Combat
+******** Aerial Combat (Expanded)
+******** Saving Throw Bonuses
+******** Assembling Armies
+******** Naval Combat 2
+******** Reaction Modifiers (PC3)
+******** War Machine Additons (Vikings)
+******** War Machine Modifications &amp; Additions
+******* Conversion
+******** http://jrients.blogspot.com/2011/04/boot-hill-to-d.html
+******* Encounters
+******** Pirate Encounters
+******* Equipment
+******** Airplanes
+******** Armor Failure
+******** Armor Value
+******** Flying Mounts
+******** Humanoid Armor
+******** Monster Mounts
+******** Ships: Movement Rate (Updated)
+******** https://bruce-heard.blogspot.com/2017/11/ShipMVrates.html
+******** Ships: Viking
+******** Underwater Boats
+******** Underwater Chariots
+******** Weapon Defects
+******* Experience
+******** EXP For Honor
+******** EXP for Magic-Users
+******* Game Master Advice
+******** Class Construction
+******** Storytelling
+******** Tailoring Challenges to Characters
+******* Magic
+******** Craftmagic
+******** Dragon Magic
+******** Glyphs
+******** Power Runes
+******** Pyramid Energy
+******** Rune Magic
+******** Spell &amp; Magic Item Creation
+******** Totem Magic
+******* Monsters
+******** Dragon
+******** Dragon Ceremony
+******** Dragon Eggs
+******** Dragon Parts
+******** Subdual and Control of Dragons
+******** Stone Giant Creation
+******** Hsiao mentions monsters can use natural attacks as magical weapons
+******** Monster Creation
+******** Monster Difficulty
+******* Movement
+******** Aerial Movement and Combat
+******** Desert and Caravan Travel Rates
+******** Heat Exhaustion
+******** Heat Exhaustion &amp; Lack of Water
+******** Peripheral Vision
+******** Riding
+******** Sailing
+******** Space Travel
+******** Spell Ship Tactics
+******** Swimming &amp; Diving
+******** Underwater Vision
+******** Weather
+******** Weather (Expanded)
+******* Other Worlds
+******** Limbo
+******* Personalization
+******** Family Status
+******** Honor
+******** Important Past Experience
+******** Improvements/Disabilities
+******** Parentage &amp; Siblings
+******** Personality Traits
+******** Physical Details
+******** Social Level
+******** Social Standing
+******** Training Background
+******** Unfortunate Legacy
+******* Spells
+******** Specialization/Spheres - Immortals Book and GAZ3
+******* Strongholds and Dominions
+******** Arena Payment
+******** Castle Construction Expanded
+******** Chariot Racing
+******** Cloud Giant Castles
+******** Dominion
+******** Eleven Dominion Events
+******** Shrines
+******** Tournaments
+******* Treasure
+******** Damaged Gems
+******** Dwarven Craftmagic
+******** Icons
+******** Magic Crafting
+******** Magic Item Creation
+******** Magic Item Creation (Expanded)
+******** Monoliths
+****** Spells
+******* Underwater
+******** Elemental Protection (Wall of Stone)
+******** Elemental Protection 10&apos; Radius (Wall of Iron)
+******** Ice Shard (Lightning Bolt)
+******** Move Rocks (Call Lightning)
+******** If this spell is cast underwater, it instead creates a current in a 20 ft. area that picks up small rocks and sweeps them along. Anyone within the effected area suffers 8d6 points of damage, 4d6 if a successful saving throw vs. dragon breath is made.
+******** Water Barrier (Wall of Fire)
+******** Sea Fury (Earthquake)
+***** Final Read-Through
+****** Change &apos; and &quot; to curley
+****** Cross-References
+******* Don't include items (Spells, Equipment, Conditions, etc.)
+****** Check index entries, add any missing
+****** Check Chapters
+******* Creating a Chracter
+******* Ability Scores
+******* Classes
+******* Alignment
+******* Skills
+******* Weapon Feats
+******* Equipment
+******* Spells and Spellcasting
+******* Experience
+******* Movement
+******* Encounters
+******* Combat
+******* Strongholds and Dominions
+******* Other Worlds
+******* Immortals
+******* Time Travel
+******* Monsters
+******* Treasure
+******* Game Master Advice
+****** Remove Duplicate text (Probably lots in Reversable Spells)

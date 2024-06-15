@@ -1,0 +1,7 @@
+makeindex -s ./style classes.idx
+makeindex -s ./style equipment.idx
+makeindex -s ./style spells.idx
+makeindex -s ./style monsters.idx
+makeindex -s ./style magicitems.idx
+makeindex -s ./style general.idx
+lualatex Dark\ Dungeons.tex
