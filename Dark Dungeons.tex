@@ -140,14 +140,10 @@
 \setcounter{tocdepth}{1}
 % Remove dots
 \renewcommand{\cftdot}{}
-% Reformat numberline
-\renewcommand{\numberline}[1]{Chapter~#1:~}
 % Disable hyphenation
 \makeatletter\renewcommand{\@tocrmarg}{\@pnumwidth plus1fil}\makeatother
 
 % Index
-% Set table name to start with Table
-\renewcommand{\listoftables}\begingroup\renewcommand{\numberline}[1]{Table~#1:~}\listoftables\endgroup
 % Remove indent
 \setlength{\cfttabindent}{0in}
 
@@ -233,6 +229,9 @@
 \input{"00 - Introduction1.tex"}
 \newpage
 \pdfbookmark[chapter]{\contentsname}{toc}
+% Reformat numberline
+\renewcommand{\numberline}[1]{Chapter~#1:~}
+%
 \tableofcontents
 \restoregeometry
 
@@ -265,6 +264,9 @@
 \label{chap:Indices}
 \chapterimage
 \thispagestyle{plain}
+% Reformat numberline
+\renewcommand{\listoftables}\begingroup\renewcommand{\numberline}[1]{Table~#1:~}\listoftables\endgroup
+%
 
 \footnotesize
 \printindex[classes]
